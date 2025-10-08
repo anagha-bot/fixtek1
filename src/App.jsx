@@ -12,7 +12,6 @@ import Faqs from './Components/Faqs';
 import ServiceBooking from './Components/ServiceBooking';
 
 
-
 function App(){
   return(
     <Router>
@@ -25,7 +24,7 @@ function App(){
        <Route path="/who-we-are"element={<Whoweare/>}/>
         <Route path="/partner-with-us"element={<Partnerwithus/>}/> 
         <Route path="/faqs"element={<Faqs/>}/>
-                <Route path="/ServiceBooking"element={<ServiceBooking/>}/>
+                <Route path="/service-booking"element={<ServiceBooking/>}/>
       </Routes>
     </Router>
   )
