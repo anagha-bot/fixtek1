@@ -9,7 +9,8 @@ import Booking from './Components/Booking';
 import Whoweare from './Components/Whoweare';
 import Partnerwithus from './Components/Partnerwithus';
 import Faqs from './Components/Faqs';
-import ServiceBooking from './Components/serviceBooking';
+import ServiceBooking from './Components/ServiceBooking';
+
 
 
 function App(){
@@ -24,7 +25,7 @@ function App(){
        <Route path="/who-we-are"element={<Whoweare/>}/>
         <Route path="/partner-with-us"element={<Partnerwithus/>}/> 
         <Route path="/faqs"element={<Faqs/>}/>
-                <Route path="/service-booking"element={<ServiceBooking/>}/>
+                <Route path="/ServiceBooking"element={<ServiceBooking/>}/>
       </Routes>
     </Router>
   )
