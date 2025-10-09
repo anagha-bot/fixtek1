@@ -5,26 +5,24 @@ function Whoweare() {
   return (
     <div className="mt-20 space-y-20">
 
-      {/* ================= WHO WE ARE SECTION ================= */}
-      <div className="flex justify-center px-4"> 
-        <div className="flex flex-col md:flex-row justify-between items-center bg-[#F9F3EF] rounded-xl w-full md:w-[1244px] h-auto md:h-[552px] shadow-sm p-6 md:p-8">
-          
-          {/* Left Content */}
-          <div className="w-full md:w-1/2 pr-0 md:pr-6 flex flex-col justify-center text-center md:text-left">
-            <h2 className="text-[28px] md:text-[41px] font-bold text-[#00343D] mb-2 leading-snug py-4 md:py-6">
-              Lorem Ipsum is simply <br /> dummy text of the printing and typesetting.
-            </h2>
-            <p className="text-[#212529] text-[14px] md:text-[15px] leading-relaxed">
-              Lorem Ipsum is simply dummy text of the printing and typesetting <br />
-              industry. Lorem Ipsum has been th
-            </p>
-          </div>
-
+      <div className="flex justify-center px-2">
+  <div className="flex flex-col md:flex-row justify-between items-start bg-[#F9F3EF] rounded-xl w-full md:w-[1244px] h-auto md:h-[552px] shadow-sm p-6 md:p-8">
+    
+    {/* Left Content */}
+    <div className="w-full md:w-1/2 pr-0 md:pr-6 flex flex-col justify-start text-center md:text-left">
+      <h2 className="text-[28px] md:text-[41px] font-manrope font-bold text-[#00343D] mb-2 leading-snug py-4 md:py-13">
+        Lorem Ipsum is simply <br /> dummy text of the printing and typesetting.
+      </h2>
+      <p className="text-[#212529] text-[14px] font-manrope md:text-[15px] leading-relaxed">
+        Lorem Ipsum is simply dummy text of the printing and typesetting <br />
+        industry. Lorem Ipsum has been th
+      </p>
+    </div>
           {/* Right Image */}
-          <div className="w-full md:w-1/2 flex justify-center mt-6 md:mt-0">
+          <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0 ">
             <div className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] flex items-center">
               <img
-                src="Image+Background (1).png"
+                src="10-ways-to-keep-your-house-clean.jpg"
                 alt="who we are"
                 className="object-cover w-[299px] h-[292px] md:w-[499px] md:h-[492px]"
               />
@@ -37,8 +35,8 @@ function Whoweare() {
       <div className="flex flex-col md:flex-row justify-between items-start max-w-[1244px] mx-auto px-4 gap-8 md:gap-0">
         {/* Left Content */}
         <div className="w-full md:w-2/3 text-center md:text-left">
-          <h2 className="text-[24px] md:text-[31px] font-semibold text-[#212529] mb-3">Our Mission</h2>
-          <p className="text-[#212529] text-[14px] md:text-[15px] leading-relaxed">
+          <h2 className="text-[24px] md:text-[31px] font-semibold text-[#212529] font-manrope  mb-3">Our Mission</h2>
+          <p className="text-[#212529] text-[14px] md:text-[15px] font-manrope  leading-relaxed">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has<br/>
              been the industry's standard dummy text ever since the 1500s, when an unknown printer took a<br/> 
              galley of type and scrambled it to make a type specimen book
@@ -60,12 +58,12 @@ function Whoweare() {
       </div>
 
       {/* ================= PHONE + CARDS SECTION ================= */}
-      <h2 className="text-center text-[24px] md:text-[33px] font-bold text-[#00343D]">
+      <h2 className="text-center font-manrope  text-[24px] md:text-[33px] font-bold text-[#00343D]">
         Fixtek Everything. Find Spares. Book Instantly <br />
         with the Fixtek Home Service App
       </h2>
 
-      <p className="text-center text-[#212529] text-[12px] md:text-[13px] leading-relaxed px-4">
+      <p className="text-center font-manrope  text-[#212529] text-[12px] md:text-[13px] leading-relaxed px-4">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br/>
         Ipsum has been Lorem Ipsum is simply dummy text of the printing and typesetting.
       </p>

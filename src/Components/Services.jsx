@@ -65,7 +65,7 @@ function Services() {
 
         {/* Right: Text Content */}
         <div className="flex-1 mt-6 md:mt-0 md:ml-6 text-center md:text-left px-8">
-          <h1 className="text-[26px] sm:text-[30px] md:text-[36px] font-bold leading-tight">
+          <h1 className="text-[26px] sm:text-[30px] md:text-[36px] font-manrope  font-bold leading-tight">
             Plumbing Problems? We&apos;re here for you.
           </h1>
           <p className="text-gray-200 mt-3 text-[14px] sm:text-[15px] font-manrope">

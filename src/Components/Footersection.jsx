@@ -17,7 +17,7 @@ function Footersection() {
         <p className="text-[22px] font-bold font-manrope">Lorem Ipsum is simply</p>
 
         {/* ✅ Gradient Underline Applied */}
-        <h1 className="text-[57px] text-3xl font-bold mb-3 leading-snug font-manrope relative">
+        <h1 className="text-[57px] text-3xl font-bold font-manrope  mb-3 leading-snug font-manrope relative">
           <span className="relative font-extrabold after:content-[''] after:absolute after:left-3 after:bottom-0 after:w-[163px] after:h-[10px] after:bg-gradient-to-r after:from-transparent after:via-white after:to-white">
             Home
           </span>{" "}

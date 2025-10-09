@@ -45,7 +45,7 @@ function Booking() {
 
       {/* ---------- Service Info ---------- */}
       <div className="mt-5 px-4 md:px-20">
-        <h3 className="text-xl md:text-2xl font-bold text-[#212529]">
+        <h3 className="text-xl md:text-2xl font-manrope  font-bold text-[#212529]">
           Plumbing Repair
         </h3>
         <div className="flex items-center text-gray-600 mt-1">
