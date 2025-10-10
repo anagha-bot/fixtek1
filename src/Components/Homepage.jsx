@@ -74,7 +74,7 @@ export default function Homepage() {
       {/* Services Illustration + Background Section */}
       <div className="relative w-full bg-white">
         {/* Green background starting from workers’ waistline */}
-        <div className="absolute bottom-[0px] left-0 w-full h-[98px] bg-[#0c3b38] "></div>
+        <div className="absolute bottom-[0px] left-0 w-full h-[95px] bg-[#0c3b38] "></div>
 
         {/* Workers + iPhone */}
         <div className="w-full flex flex-col items-center relative z-10">
@@ -102,103 +102,100 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-
-      {/* 🛠️ Find Your Home Service Section */}
-      <div className=" bg-[#0c3b38]  py-16 text-center text-white">
-        <h2 className="text-[28px] md:text-[32px] font-bold mb-10 text-manrope">
-          Find Your Home Service
-        </h2>
-
-        <div className="bg-[#0c3b38] min-h-screen flex flex-col items-center justify-center">
-          {/* Cards Row */}
-          <div className="flex items-center justify-center gap-6  px-4 no-scrollbar">
-            {/* Card 1 */}
-            <div className="bg-white rounded-xl p-2 text-center shadow w-[140px] h-[120px] opacity-70">
-              <p className=" text-black text-[11px] font-semibold text-manrope">
-                Microwave Oven
-              </p>
-              <p className="text-green-600 text-[9px] text-manrope">
-                5.3k+ Bookings
-              </p>
-              <img
-                src="Microwave Oven.png"
-                alt="oven"
-                className="w-[40px] h-[40px] object-contain mx-auto mt-2"
-              />
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-white rounded-xl p-3 text-center shadow w-[180px] h-[150px] opacity-80">
-              <p className="text-black text-[15px] font-semibold text-manrope">
-                Carpentry
-              </p>
-              <p className="text-green-600 text-[12px] font-semibold text-manrope">
-                9.3k+ Bookings
-              </p>
-              <img
-                src="Carpentry.png"
-                alt="carpentry"
-                className="w-[55px] h-[55px] object-contain mx-auto mt-2"
-              />
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white rounded-2xl p-5 text-center shadow-lg w-[260px] h-[210px] scale-110">
-              <p className="text-black text-[20px] text-manrope font-semibold">
-                Plumbing
-              </p>
-              <p className="text-green-600 text-[16px] text-manrope font-semibold">
-                10.3k+ Bookings
-              </p>
-              <img
-                src="Plumbing (2).png"
-                alt="plumbing"
-                className="w-[85px] h-[85px] object-contain mx-auto mt-4"
-              />
-            </div>
-
-            {/* Card 4 */}
-            <div className="bg-white rounded-xl p-3 text-center shadow w-[180px] h-[150px] opacity-80">
-              <p className="text-black  text-[15px] text-manrope font-semibold">
-                Electrical
-              </p>
-              <p className="text-green-600 text-[12px] text-manrope font-semibold">
-                13.5k+ Bookings
-              </p>
-              <img
-                src="Electrical.png"
-                alt="electrical"
-                className="w-[55px] h-[55px] object-contain mx-auto mt-2"
-              />
-            </div>
-
-            {/* Card 5 */}
-            <div className="bg-white rounded-xl p-2 text-center shadow w-[140px] h-[120px] opacity-70">
-              <p className="text-black text-[11px] text-manrope font-semibold">
-                Cleaning
-              </p>
-              <p className=" text-green-600 text-[9px] text-manrope">
-                13.5k+17p Bookings
-              </p>
-              <img
-                src="Cleaning (1).png"
-                alt="cleaning"
-                className="w-[40px] h-[40px] object-contain mx-auto mt-2"
-              />
-            </div>
-          </div>
-        </div>
+    {/* 🛠️ Find Your Home Service Section */}
+<div className="bg-[#0c3b38] h-[500px] py-14 text-center text-white">
+  <h2 className="text-[28px] md:text-[45px] font-bold mb-10 text-manrope">
+    Find Your Home Service
+  </h2>
+  <div className="flex flex-col items-center justify-center">
+    {/* Cards Row */}
+    <div className="flex items-center justify-center gap-8 px-4 no-scrollbar mt-4">
+      {/* Card 1 */}
+      <div className="bg-white rounded-xl p-2 text-center shadow w-[140px] h-[120px] opacity-70">
+        <p className="text-black text-[11px] font-semibold text-manrope">
+          Microwave Oven
+        </p>
+        <p className="text-green-600 text-[9px] text-manrope">
+          5.3k+ Bookings
+        </p>
+        <img
+          src="Microwave Oven.png"
+          alt="oven"
+          className="w-[40px] h-[40px] object-contain mx-auto mt-2"
+        />
       </div>
 
+      {/* Card 2 */}
+      <div className="bg-white rounded-xl p-3 text-center shadow w-[180px] h-[150px] opacity-80">
+        <p className="text-black text-[15px] font-semibold text-manrope">
+          Carpentry
+        </p>
+        <p className="text-green-600 text-[12px] font-semibold text-manrope">
+          9.3k+ Bookings
+        </p>
+        <img
+          src="Carpentry.png"
+          alt="carpentry"
+          className="w-[55px] h-[55px] object-contain mx-auto mt-2"
+        />
+      </div>
+
+      {/* Card 3 */}
+      <div className="bg-white rounded-2xl p-5 text-center shadow-lg w-[260px] h-[210px] scale-110">
+        <p className="text-black text-[20px] text-manrope font-semibold">
+          Plumbing
+        </p>
+        <p className="text-green-600 text-[16px] text-manrope font-semibold">
+          10.3k+ Bookings
+        </p>
+        <img
+          src="Plumbing (2).png"
+          alt="plumbing"
+          className="w-[85px] h-[85px] object-contain mx-auto mt-4"
+        />
+      </div>
+
+      {/* Card 4 */}
+      <div className="bg-white rounded-xl p-3 text-center shadow w-[180px] h-[150px] opacity-80">
+        <p className="text-black text-[15px] text-manrope font-semibold">
+          Electrical
+        </p>
+        <p className="text-green-600 text-[12px] text-manrope font-semibold">
+          13.5k+ Bookings
+        </p>
+        <img
+          src="Electrical.png"
+          alt="electrical"
+          className="w-[55px] h-[55px] object-contain mx-auto mt-2"
+        />
+      </div>
+
+      {/* Card 5 */}
+      <div className="bg-white rounded-xl p-2 text-center shadow w-[140px] h-[120px] opacity-70">
+        <p className="text-black text-[11px] text-manrope font-semibold">
+          Cleaning
+        </p>
+        <p className="text-green-600 text-[9px] text-manrope">
+          13.5k+17p Bookings
+        </p>
+        <img
+          src="Cleaning (1).png"
+          alt="cleaning"
+          className="w-[40px] h-[40px] object-contain mx-auto mt-2"
+        />
+      </div>
+    </div>
+  </div>
+</div>
       {/* ⭐ NEW SECTION: Most Booked Services + Banner + Testimonials */}
-      <div className="w-full bg-white py-16 px-12">
+      <div className="w-full bg-white py-16 px-15">
         {/* Heading */}
-        <h2 className="text-[24px] font-bold px-6 text-manrope">
+        <h2 className="text-[24px] font-bold px-10 text-manrope">
           Most booked services
         </h2>
 
         {/* Services Cards Row */}
-        <div className="container mx-auto flex gap-4 mt-6 px-6 ">
+        <div className="container mx-auto flex gap-6 mt-8 px-1 ">
           {/* Card 1 */}
           <div className="flex flex-col inline-block">
             <img
@@ -206,14 +203,14 @@ export default function Homepage() {
               alt="service1"
               className="rounded-lg shadow w-[233px] h-[233px]"
             />
-            <div className="mt-2 text-left">
-              <p className="text-[15px] font-semibold text-black text-manrope w-[233px] h-[48px]">
+            <div className="mt-4 text-left">
+              <p className="text-[15px] font-semibold text-black text-manrope w-[233px] h-[48px] px-2">
                 Pest control (includes utensil<br /> removal)
               </p>
-              <p className="text-gray-500 text-[14px] text-manrope">
+              <p className="text-gray-500 text-[14px] text-manrope px-1">
                 ⭐ 4.79 (117K)
               </p>
-              <p className="text-black text-[14px] text-manrope">₹1,098</p>
+              <p className="text-black text-[14px] text-manrope px-2 py-1">₹1,098</p>
             </div>
           </div>
 
@@ -224,15 +221,15 @@ export default function Homepage() {
               alt="service2"
               className="rounded-lg shadow w-[233px] h-[233px]"
             />
-            <div className="mt-2 text-left">
-              <p className="text-[15px] font-semibold text-black text-manrope w-[233px] h-[48px]">
+            <div className="mt-4 text-left">
+              <p className="text-[15px] font-semibold text-black text-manrope w-[233px] h-[48px] px-2">
                 Apartment pest control <br />
                 (includes utensil removal)
               </p>
-              <p className="text-gray-500 text-[14px] text-manrope">
+              <p className="text-gray-500 text-[14px] text-manrope px-1">
                 ⭐ 4.65 (89K)
               </p>
-              <p className="text-black text-[14px] text-manrope">₹2,499</p>
+              <p className="text-black text-[14px] text-manrope px-2 py-1">₹2,499</p>
             </div>
           </div>
 
@@ -243,15 +240,15 @@ export default function Homepage() {
               alt="service3"
               className="rounded-lg shadow w-[233px] h-[233px]"
             />
-            <div className="mt-2 text-left">
-              <p className="text-[15px] font-semibold text-black text-manrope w-[233px] h-[48px]">
-                Bed bugs control
-              </p>
-              <p className="text-gray-500 text-[14px] text-manrope">
-                ⭐ 4.77 (25K)
-              </p>
-              <p className="text-black text-[14px] text-manrope">₹1,599</p>
-            </div>
+            <div className="mt-4 text-left space-y-1">
+         <p className="text-[15px] font-semibold text-black text-manrope w-[233px] leading-tight px-2">
+         Bed bugs control
+         </p>
+         <p className="text-gray-500 text-[14px] text-manrope leading-tight">
+         ⭐ 4.77 (25k)
+         </p>
+          <p className="text-black text-[14px] text-manrope leading-tight px-2 px-1">₹1,599</p>
+          </div>
           </div>
 
           {/* Card 4 */}
@@ -259,17 +256,17 @@ export default function Homepage() {
             <img
               src="Container (4).png"
               alt="service4"
-              className="rounded-lg shadow w-[233px] h-[233px]"
+              className="rounded-lg shadow w-[233px] h-[233px] "
             />
-            <div className="mt-2 text-left">
-              <p className="text-[15px] font-semibold text-black text-manrope w-[233px] h-[48px]">
-                Intense bathroom cleaning
-              </p>
-              <p className="text-gray-500 text-[14px] text-manrope">
-                ⭐ 4.79 (2.9M)
-              </p>
-              <p className="text-black text-[14px] text-manrope">₹449</p>
-            </div>
+            <div className="mt-4 text-left space-y-1">
+         <p className="text-[15px] font-semibold text-black text-manrope w-[233px] leading-tight px-2">
+         Intense bathroom cleaning
+         </p>
+         <p className="text-gray-500 text-[14px] text-manrope leading-tight px-1 ">
+         ⭐ 4.79 (2.9M)
+         </p>
+          <p className="text-black text-[14px] text-manrope leading-tight py-1 px-2">₹449</p>
+          </div>
           </div>
 
           {/* Card 5 */}
@@ -279,20 +276,21 @@ export default function Homepage() {
               alt="service5"
               className="rounded-lg shadow w-[233px] h-[233px]"
             />
-            <div className="mt-2 text-left">
-              <p className="text-[15px] font-semibold text-black text-manrope w-[233px] h-[48px]">
-                Apartment termite control
-              </p>
-              <p className="text-gray-500 text-[14px] text-manrope">
-                ⭐ 4.83 (16K)
-              </p>
-              <p className="text-black text-[14px] text-manrope">₹3,999</p>
-            </div>
+                 <div className="mt-4 text-left space-y-1">
+         <p className="text-[15px] font-semibold text-black text-manrope w-[233px] leading-tight px-2">
+         Apartment termite control
+         </p>
+         <p className="text-gray-500 text-[14px] text-manrope leading-tight px-1">
+         ⭐ 4.83 (16k)
+         </p>
+          <p className="text-black text-[14px] text-manrope leading-tight px-2 py-1">₹3,999</p>
+          </div>
           </div>
         </div>
+        
 
         {/* Banner Section */}
-        <div className="container mx-auto mt-12 px-6 w-[1232px h-[410px]">
+        <div className="container mx-auto mt-20 px-6 w-[1232px h-[410px]">
           <img
             src="Native Smart Locks (2).png"
             alt="Smart Door Banner"
@@ -301,11 +299,11 @@ export default function Homepage() {
         </div>
 
         {/* Testimonials */}
-        <h2 className="text-center text-[43px] font-bold mt-12 text-manrope">
+        <h2 className="text-center text-[43px] font-bold mt-20 text-manrope">
           See what our users are saying...
         </h2>
 
-        <div className="container mx-auto flex flex-wrap justify-center gap-6 mt-8 px-6">
+        <div className="container mx-auto flex flex-wrap justify-center gap-10 mt-16 px-6">
           {/* Card 1 */}
           <div className="relative w-[260px] px-4 py-10">
             <img
@@ -313,7 +311,7 @@ export default function Homepage() {
               alt="user1"
               className="w-[253px] h-[544px] mx-auto rounded-lg"
             />
-            <div className="absolute bottom-20 left-1/2 -translate-x-1/2 bg-white shadow rounded-lg p-5 w-[211px] h-[185px]">
+            <div className="absolute bottom-20 left-1/2 -translate-x-1/2 bg-white shadow rounded-lg p-4 w-[211px] h-[185px]">
               <p className="text-[11px] text-gray-600 text-manrope">
                 "Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry. Lorem Ipsum has been the industry's
@@ -334,7 +332,7 @@ export default function Homepage() {
               alt="user2"
               className="w-[310px] h-[628px] mx-auto rounded-lg"
             />
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white shadow rounded-lg p-3 w-[211px] h-[185px]">
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 bg-white shadow rounded-lg p-3 w-[211px] h-[185px]">
               <p className="text-[11px] text-gray-600 text-manrope">
                 "Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry. Lorem Ipsum has been the industry's
@@ -393,15 +391,15 @@ export default function Homepage() {
       </div>
 
       {/* ⭐ Why Choose FIXTEK Section */}
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Card 1 */}
         <div className="bg-white rounded-xl shadow-md  p-0 flex flex-col items-center text-center  w-[363px] h-[226px]">
           <img
             src="Figure.png"
             alt="Background Verified"
-            className="w-[362px] h-[200px]  rounded-lg mb-0"
+            className="w-[362px] h-[200px]  rounded-lg mb-0 "
           />
-          <p className="text-[16px]  font-manrope font-semibold text-gray-800 text-manrope">
+          <p className="text-[16px] font-manrope font-semibold text-gray-800 ">
             Background Verified and Trusted Experts
           </p>
         </div>
@@ -431,8 +429,9 @@ export default function Homepage() {
           </div>
         </div>
 <div className="w-full bg-white py-16 px-6">
-        <h2 className="text-center text-[36px] md:text-[36px] font-bold text-[#2c1a25] mb-12">
-          WHY CHOOSE FIXTEK
+        <h2 className="text-center text-[36px] md:text-[36px] font-extrabold text-[#3C172A] text-manrope mb-12">
+              <span className="text-[#3C172A]">WHY CHOOSE </span>
+    <span className="text-black">FIXTEK</span>
         </h2>
         {/* Bottom Row */}
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
@@ -454,9 +453,9 @@ export default function Homepage() {
             <img
               src="Figure (4).png"
               alt="Women Workforce"
-              className="w-[360px] h-[176px] object-contain rounded-lg mb-4"
+              className="w-[360px] h-[176px] object-contain rounded-lg mb-6"
            />
-            <p className="text-[14px] text-black">Quality You Can Trust</p>
+            <p className="text-[16px] text-manrope text-black font-bold">Quality You Can Trust</p>
           </div>
 
           {/* Card 6 */}
@@ -466,7 +465,7 @@ export default function Homepage() {
               alt="Women Workforce"
               className="w-[360px] h-[176px] object-contain rounded-lg mb-4"
            />
-            <p className="text-[14px] text-black">
+            <p className="text-[16px] text-manrope font-bold text-black">
               Trusted by 6000+ Families
             </p>
           </div>
