@@ -58,20 +58,16 @@ function Whoweare() {
       </div>
 
       {/* ================= PHONE + CARDS SECTION ================= */}
-      <h2 className="text-center font-manrope  text-[24px] md:text-[33px] font-bold text-[#00343D]">
-        Fixtek Everything. Find Spares. Book Instantly <br />
-        with the Fixtek Home Service App
-      </h2>
+     <h2 className="text-center font-manrope text-[24px] md:text-[33px] font-bold text-[#00343D] mb-6">
+  Fixtek Everything. Find Spares. Book Instantly <br />
+  with the Fixtek Home Service App
+</h2>
 
-      <p className="text-center font-manrope  text-[#212529] text-[12px] md:text-[13px] leading-relaxed px-4">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br/>
-        Ipsum has been Lorem Ipsum is simply dummy text of the printing and typesetting.
-      </p>
-
-      {/* Responsive Phone + Cards Layout */}
+<p className="text-center font-manrope text-[#212529] text-[12px] md:text-[13px] leading-relaxed px-6 mt-4">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br/>
+  Ipsum has been Lorem Ipsum is simply dummy text of the printing and typesetting.
+</p>
       <div className="flex flex-col md:flex-row justify-center items-center mt-14 relative gap-12 md:gap-20">
-        
-        {/* Left Side Feature Cards */}
         <div className="flex flex-row md:flex-col gap-6 mt-4 md:mt-10">
           <div className="w-[196px] h-[128px] mx-auto md:ml-10">
             <img src="Figure (8).png" alt="6000+ Users" className="w-full h-full object-contain rounded-xl shadow-md" />

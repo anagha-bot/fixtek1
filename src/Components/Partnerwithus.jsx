@@ -5,7 +5,7 @@ function Partnerwithus() {
   return (
     <div className="space-y-7">
       {/* Content Section with Padding */}
-      <div className="p-16 space-y-7">
+      <div className="p-16 space-y-14">
         {/* Top Section */}
         <div className="bg-[#023047] rounded-lg p-8 flex flex-col md:flex-row items-center justify-between text-white">
           <div className="max-w-[1224px] h-[552px]">
@@ -29,7 +29,7 @@ function Partnerwithus() {
 
         {/* Bottom Section */}
         <div className="bg-[#F3F7FF] shadow rounded-lg p-9 w-full h-[555px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 py-6 mt-7">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-60 py-3 mt-4 px-7">
             {/* Card 1 */}
             <div className="bg-[#FFFFFF] shadow rounded-lg p-3 px-4 h-[440px] w-[601px]">
               <h3 className="text-[43px] font-regular mb-2 px-0">Why Join the Fixtek<br/> Network?</h3>

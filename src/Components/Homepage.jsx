@@ -390,88 +390,93 @@ export default function Homepage() {
         </div>
       </div>
 
-      {/* ⭐ Why Choose FIXTEK Section */}
-      <div className="container mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Card 1 */}
-        <div className="bg-white rounded-xl shadow-md  p-0 flex flex-col items-center text-center  w-[363px] h-[226px]">
-          <img
-            src="Figure.png"
-            alt="Background Verified"
-            className="w-[362px] h-[200px]  rounded-lg mb-0 "
-          />
-          <p className="text-[16px] font-manrope font-semibold text-gray-800 ">
-            Background Verified and Trusted Experts
-          </p>
-        </div>
+    <div className="bg-[#F6F6F6] w-full py-16  px-6 mt-16 flex flex-col items-center justify-center">
+  {/* Top Row */}
+  <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center mb-12">
+    {/* Card 1 */}
+    <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all p-0 flex flex-col items-center text-center w-[363px] h-[226px]">
+      <img
+        src="Figure.png"
+        alt="Background Verified"
+        className="w-[362px] h-[176px] rounded-t-2xl object-cover"
+      />
+      <p className="text-[15px] font-semibold text-gray-800 mt-2 px-3">
+        Background Verified and Trusted Experts
+      </p>
+    </div>
 
-        {/* Card 2 */}
-        <div className="bg-white rounded-xl shadow-md p-5 flex flex-col items-center text-center  w-[362px] h-[226px]">
-          <img
-            src="Figure (1).png"
-            alt="Home Cleaning"
-              className= "w-[360px] h-[176px] object-contain rounded-lg mb-4"
-            />
-            <p className="text-[16px] font-semibold text-gray-800">
-              Professionally Trained For Home Cleaning
-            </p>
-          </div>
+    {/* Card 2 */}
+    <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all p-0 flex flex-col items-center text-center w-[362px] h-[226px]">
+      <img
+        src="Figure (1).png"
+        alt="Home Cleaning"
+        className="w-[360px] h-[176px] rounded-t-2xl object-cover"
+      />
+      <p className="text-[15px] font-semibold text-gray-800 mt-2 px-3">
+        Professionally Trained For Home Cleaning
+      </p>
+    </div>
 
-          {/* Card 3 */}
-          <div className="bg-white rounded-xl shadow-md p-5 flex flex-col items-center text-center  w-[362px] h-[226px]">
-            <img
-              src="Figure (2).png"
-              alt="Figure (2)"
-              className="w-[360px] h-[176px] object-contain rounded-lg mb-4"
-            />
-            <p className="text-[16px] font-semibold text-gray-800">
-              Freedom to Cancel or Reschedule
-            </p>
-          </div>
-        </div>
-<div className="w-full bg-white py-16 px-6">
-        <h2 className="text-center text-[36px] md:text-[36px] font-extrabold text-[#3C172A] text-manrope mb-12">
-              <span className="text-[#3C172A]">WHY CHOOSE </span>
+    {/* Card 3 */}
+    <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all p-0 flex flex-col items-center text-center w-[362px] h-[226px]">
+      <img
+        src="Figure (2).png"
+        alt="Freedom"
+        className="w-[360px] h-[176px] rounded-t-2xl object-cover"
+      />
+      <p className="text-[15px] font-semibold text-gray-800 mt-2 px-3">
+        Freedom to Cancel or Reschedule
+      </p>
+    </div>
+  </div>
+
+  {/* Centered Title */}
+  <h2 className="text-center text-[36px] md:text-[36px] font-extrabold text-[#3C172A] text-manrope my-12">
+    <span className="text-[#3C172A]">WHY CHOOSE </span>
     <span className="text-black">FIXTEK</span>
-        </h2>
-        {/* Bottom Row */}
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+  </h2>
 
-          {/* Card 4 */}
-          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center  w-[362px] h-[226px]">
-            <img
-              src="Figure (3).png"
-              alt="Women Workforce"
-              className="w-[360px] h-[176px] object-contain rounded-lg mb-2"
-            />
-            <p className="text-[16px] font-semibold text-gray-800">
-              Powered By Strong Women Workforce
-            </p>
-          </div>
+  {/* Bottom Row */}
+  <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center mt-0">
+    {/* Card 4 */}
+    <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all p-0 flex flex-col items-center text-center w-[362px] h-[226px]">
+      <img
+        src="Figure (3).png"
+        alt="Women Workforce"
+        className="w-[360px] h-[176px] rounded-t-2xl object-cover"
+      />
+      <p className="text-[15px] font-semibold text-gray-800 mt-2 px-3">
+        Powered By Strong Women Workforce
+      </p>
+    </div>
 
-          {/* Card 5 */}
-          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center  w-[362px] h-[226px]">
-            <img
-              src="Figure (4).png"
-              alt="Women Workforce"
-              className="w-[360px] h-[176px] object-contain rounded-lg mb-6"
-           />
-            <p className="text-[16px] text-manrope text-black font-bold">Quality You Can Trust</p>
-          </div>
+    {/* Card 5 */}
+    <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all p-0 flex flex-col items-center text-center w-[362px] h-[226px]">
+      <img
+        src="Figure (4).png"
+        alt="Quality"
+        className="w-[360px] h-[176px] rounded-t-2xl object-cover"
+      />
+      <p className="text-[15px] font-semibold text-gray-900 mt-2 font-bold px-3">
+        Quality You Can Trust
+      </p>
+    </div>
 
-          {/* Card 6 */}
-          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center w-[362px] h-[226px]">
-           <img
-              src="Figure (5).png"
-              alt="Women Workforce"
-              className="w-[360px] h-[176px] object-contain rounded-lg mb-4"
-           />
-            <p className="text-[16px] text-manrope font-bold text-black">
-              Trusted by 6000+ Families
-            </p>
-          </div>
-        </div>
-      </div>
-      <Footersection/>
+    {/* Card 6 */}
+    <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all p-0 flex flex-col items-center text-center w-[362px] h-[226px]">
+      <img
+        src="Figure (5).png"
+        alt="Families"
+        className="w-[360px] h-[176px] rounded-t-2xl object-cover"
+      />
+      <p className="text-[15px] font-semibold text-gray-900 mt-3 font-bold px-3">
+        Trusted by 6000+ Families
+      </p>
+    </div>
+  </div>
+</div>
+<Footersection />
+
 </div>
   );
 }
