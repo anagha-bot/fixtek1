@@ -7,8 +7,8 @@ function Partnerwithus() {
       {/* Content Section with Padding */}
       <div className="p-16 space-y-14">
         {/* Top Section */}
-        <div className="bg-[#023047] rounded-lg p-8 flex flex-col md:flex-row items-center justify-between text-white">
-          <div className="max-w-[1224px] h-[552px]">
+        <div className="bg-[#023047] rounded-lg p-8 flex flex-col md:flex-row items-center justify-between text-white w-[1200px]">
+          <div className="max-w-[1200px] h-[552px]">
             <h2 className="text-[41px] font-bold mb-3">Become a Fixtek <br/> Partner</h2>
             <p className="mb-6 text-[15px]">
               Lorem ipsum is simply dummy text of the printing and typesetting industry.<br/> 
@@ -28,7 +28,7 @@ function Partnerwithus() {
         </div>
 
         {/* Bottom Section */}
-        <div className="bg-[#F3F7FF] shadow rounded-lg p-9 w-full h-[555px]">
+        <div className="bg-[#F3F7FF] shadow rounded-lg p-9 w-full  h-[555px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-60 py-3 mt-4 px-7">
             {/* Card 1 */}
             <div className="bg-[#FFFFFF] shadow rounded-lg p-3 px-4 h-[440px] w-[601px]">

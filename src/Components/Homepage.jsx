@@ -103,7 +103,7 @@ export default function Homepage() {
         </div>
       </div>
     {/* 🛠️ Find Your Home Service Section */}
-<div className="bg-[#0c3b38] h-[500px] py-14 text-center text-white">
+<div id="find-service" className="bg-[#0c3b38] h-[500px] py-14 text-center text-white">
   <h2 className="text-[28px] md:text-[45px] font-bold mb-10 text-manrope">
     Find Your Home Service
   </h2>

@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function Login({ onClose, onVerified }) {
-  const [step, setStep] = useState(1); // 1 = phone input, 2 = OTP
+  const [step, setStep] = useState(1);
   const [phone, setPhone] = useState({ countryCode: "IN", number: "" });
   const [otp, setOtp] = useState("");
+  const modalRef = useRef(null);
+
+  useEffect(() => {
+    // Whenever the step changes, scroll modal to top
+    if (modalRef.current) {
+      modalRef.current.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [step]);
 
   const handleLoginClick = () => {
     if (!phone.number || phone.number.trim().length < 6) {
@@ -23,7 +31,10 @@ function Login({ onClose, onVerified }) {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-60 p-4">
-      <div className="bg-white rounded-xl shadow-lg w-full max-w-[777px] h-auto p-6 md:p-9 relative font-manrope overflow-y-auto">
+      <div
+        ref={modalRef}
+        className="bg-white rounded-xl shadow-lg w-full max-w-[777px] h-auto max-h-[90vh] p-6 md:p-9 relative font-manrope overflow-y-auto"
+      >
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -34,7 +45,7 @@ function Login({ onClose, onVerified }) {
 
         {step === 1 && (
           <>
-            {/* Header Section */}
+            {/* Login Step */}
             <div className="flex flex-col md:flex-row justify-between items-start gap-6">
               <div className="flex-1">
                 <h2 className="text-[40px] md:text-[64px] font-bold text-black">
@@ -46,7 +57,6 @@ function Login({ onClose, onVerified }) {
                 <div className="border-b-2 border-gray-700 mt-6"></div>
               </div>
 
-              {/* Image */}
               <img
                 src="isometric-data-protection-concept-with-parent-child-login-window-lock-3d 1.png"
                 alt="login illustration"
@@ -54,7 +64,6 @@ function Login({ onClose, onVerified }) {
               />
             </div>
 
-            {/* Phone Input */}
             <div className="mt-8 flex flex-col md:flex-row gap-4">
               <select
                 className="w-full md:w-[97px] h-[60px] md:h-[75px] px-3 py-2 border rounded-lg bg-[#E4E4E4] text-black font-medium focus:outline-none"
@@ -72,13 +81,12 @@ function Login({ onClose, onVerified }) {
               <input
                 type="tel"
                 placeholder="Enter your phone number"
-                className="w-full md:w-[515px] h-[60px] md:h-[75px] px-3 py-2 border rounded-lg bg-[#E4E4E4] focus:outline-none focus:ring-2 focus:ring-[#E4E4E4]"
+                className="w-full md:w-[515px] h-[60px] md:h-[75px] px-3 py-2 border rounded-lg bg-[#E4E4E4] focus:outline-none"
                 value={phone.number}
                 onChange={(e) => setPhone({ ...phone, number: e.target.value })}
               />
             </div>
 
-            {/* Login Button */}
             <button
               className="w-full md:w-[622px] h-[55px] md:h-[60px] bg-[#00343D] text-white rounded-lg mt-6 hover:bg-[#024650] transition text-[16px] md:text-[18px] font-bold"
               onClick={handleLoginClick}
@@ -86,7 +94,6 @@ function Login({ onClose, onVerified }) {
               Login
             </button>
 
-            {/* Terms & Policy */}
             <p className="text-[14px] md:text-[18px] font-medium text-black mt-6 leading-relaxed">
               By clicking on Login, I agree to our{" "}
               <span className="font-bold text-black cursor-pointer hover:underline">
@@ -102,7 +109,7 @@ function Login({ onClose, onVerified }) {
 
         {step === 2 && (
           <div className="flex flex-col md:flex-row justify-between items-start font-manrope gap-6">
-            {/* Left: OTP Content */}
+            {/* OTP Step */}
             <div className="flex flex-col flex-1">
               <h2 className="text-[36px] md:text-[50px] font-bold text-black">
                 Enter OTP
@@ -113,7 +120,6 @@ function Login({ onClose, onVerified }) {
               </p>
               <div className="border-b-2 border-black mt-4 w-[200px]"></div>
 
-              {/* OTP Boxes */}
               <div className="flex flex-wrap gap-3 md:gap-4 mt-3">
                 {[...Array(6)].map((_, index) => (
                   <input
@@ -131,7 +137,6 @@ function Login({ onClose, onVerified }) {
                 ))}
               </div>
 
-              {/* Verify Button */}
               <button
                 className="w-full md:w-[622px] h-[55px] md:h-[60px] bg-[#00343D] text-white rounded-lg mt-8 hover:bg-[#024650] transition text-[16px] md:text-[18px] font-bold"
                 onClick={handleVerifyOtp}
@@ -139,7 +144,6 @@ function Login({ onClose, onVerified }) {
                 Verify OTP
               </button>
 
-              {/* Resend OTP */}
               <p className="text-[14px] md:text-[18px] text-black mt-4">
                 Didn’t receive the OTP?{" "}
                 <span className="text-green-600 font-medium cursor-pointer hover:underline">
@@ -148,7 +152,6 @@ function Login({ onClose, onVerified }) {
               </p>
             </div>
 
-            {/* Right: Illustration */}
             <div className="flex justify-center md:justify-end w-full md:w-auto">
               <img
                 src="isometric-data-protection-concept-with-parent-child-login-window-lock-3d 1.png"
@@ -164,4 +167,3 @@ function Login({ onClose, onVerified }) {
 }
 
 export default Login;
-

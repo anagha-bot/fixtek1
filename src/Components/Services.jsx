@@ -23,7 +23,7 @@ function Services() {
   return (
     <div className="bg-white min-h-screen font-sans">
       {/* Hero Section */}
-      <div className="bg-[#00343D] text-white p-6 rounded-lg flex flex-col md:flex-row items-center md:items-start justify-between max-w-full h-auto md:h-[543px] mx-4 md:mx-9 mt-6 md:mt-9">
+      <div className="bg-[#00343D] text-white p-6 rounded-lg flex flex-col md:flex-row items-center md:items-start justify-between max-w-full  md:w-[1300px]  h-auto md:h-[543px] mx-4 md:mx-9 mt-6 md:mt-9">
         
         {/* Left: Image Carousel */}
         <div className="flex-shrink-0 w-full md:w-[402px]">
