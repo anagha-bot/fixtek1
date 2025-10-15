@@ -9,7 +9,7 @@ import Booking from './Components/Booking';
 import Whoweare from './Components/Whoweare';
 import Partnerwithus from './Components/Partnerwithus';
 import Faqs from './Components/Faqs';
-import ServiceBooking from './Components/serviceBooking';
+import ServiceBooking from './ServiceBooking';
 
 
 
