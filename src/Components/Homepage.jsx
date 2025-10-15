@@ -2,8 +2,17 @@ import React from "react";
 import { FaGooglePlay, FaApple } from "react-icons/fa";
 import Navbar from "./Navbar";
 import Footersection from "./Footersection";
+import { useNavigate } from "react-router-dom";
 
-export default function Homepage() {
+
+
+export default function Homepage({ serviceRef }) {
+  const navigate = useNavigate(); // ✅ useNavigate gives navigation function
+
+  const goToService = () => {
+    navigate("/services"); // ✅ navigate to /services
+  };
+
   return (
     <div className="min-h-screen bg-white font-manrope">
       {/* Hero Section */}
@@ -103,7 +112,7 @@ export default function Homepage() {
         </div>
       </div>
     {/* 🛠️ Find Your Home Service Section */}
-<div id="find-service" className="bg-[#0c3b38] h-[500px] py-14 text-center text-white">
+<div ref={serviceRef} id="find-service" className="bg-[#0c3b38] h-[500px] py-14 text-center text-white">
   <h2 className="text-[28px] md:text-[45px] font-bold mb-10 text-manrope">
     Find Your Home Service
   </h2>
@@ -141,7 +150,7 @@ export default function Homepage() {
       </div>
 
       {/* Card 3 */}
-      <div className="bg-white rounded-2xl p-5 text-center shadow-lg w-[260px] h-[210px] scale-110">
+      <div onClick={goToService} className="bg-white rounded-2xl p-5 text-center shadow-lg w-[260px] h-[210px] scale-110">
         <p className="text-black text-[20px] text-manrope font-semibold">
           Plumbing
         </p>
@@ -481,3 +490,10 @@ export default function Homepage() {
   );
 }
  
+
+
+
+
+
+
+

@@ -107,60 +107,69 @@ function Login({ onClose, onVerified }) {
           </>
         )}
 
-        {step === 2 && (
-          <div className="flex flex-col md:flex-row justify-between items-start font-manrope gap-6">
-            {/* OTP Step */}
-            <div className="flex flex-col flex-1">
-              <h2 className="text-[36px] md:text-[50px] font-bold text-black">
-                Enter OTP
-              </h2>
-              <p className="text-black text-[18px] md:text-[23px] font-medium mt-2">
-                We sent an OTP to your <br className="hidden md:block" /> phone
-                number {phone.number}
-              </p>
-              <div className="border-b-2 border-black mt-4 w-[200px]"></div>
+    {step === 2 && (
+  <>
+    {/* OTP Step */}
+    <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-1">
+      {/* Left Section (OTP input area) */}
+      <div className="flex-1">
+        <h2 className="text-[36px] md:text-[50px] font-bold text-black">
+          Enter OTP
+        </h2>
+        <p className="text-black text-[18px] md:text-[23px] font-medium mt-2">
+          We sent an OTP to your{" "}
+          <br className="hidden md:block" />
+          phone number {phone.number}
+        </p>
+        <div className="border-b-2 border-gray-700 mt-4 w-[200px]"></div>
 
-              <div className="flex flex-wrap gap-3 md:gap-4 mt-3">
-                {[...Array(6)].map((_, index) => (
-                  <input
-                    key={index}
-                    type="text"
-                    maxLength={1}
-                    className="w-[50px] h-[55px] md:w-[88px] md:h-[75px] text-center text-[18px] md:text-[24px] font-bold border rounded-lg bg-[#E4E4E4] focus:outline-none focus:ring-2 focus:ring-[#00343D]"
-                    value={otp[index] || ""}
-                    onChange={(e) => {
-                      const newOtp = otp.split("");
-                      newOtp[index] = e.target.value;
-                      setOtp(newOtp.join(""));
-                    }}
-                  />
-                ))}
-              </div>
+        {/* OTP Input Boxes */}
+        <div className="flex flex-wrap gap-3 md:gap-4 mt-5">
+          {[...Array(6)].map((_, index) => (
+            <input
+              key={index}
+              type="text"
+              maxLength={1}
+              className="w-[50px] h-[55px] md:w-[75px] md:h-[75px] text-center text-[18px] md:text-[24px] font-bold border rounded-lg bg-[#E4E4E4] focus:outline-none focus:ring-2 focus:ring-[#00343D]"
+              value={otp[index] || ""}
+              onChange={(e) => {
+                const newOtp = otp.split("");
+                newOtp[index] = e.target.value;
+                setOtp(newOtp.join(""));
+              }}
+            />
+          ))}
+        </div>
 
-              <button
-                className="w-full md:w-[622px] h-[55px] md:h-[60px] bg-[#00343D] text-white rounded-lg mt-8 hover:bg-[#024650] transition text-[16px] md:text-[18px] font-bold"
-                onClick={handleVerifyOtp}
-              >
-                Verify OTP
-              </button>
+        {/* Verify Button */}
+        <button
+          className="w-full md:w-[622px] h-[55px] md:h-[60px] bg-[#00343D] text-white rounded-lg mt-8 hover:bg-[#024650] transition text-[16px] md:text-[18px] font-bold"
+          onClick={handleVerifyOtp}
+        >
+          Verify OTP
+        </button>
 
-              <p className="text-[14px] md:text-[18px] text-black mt-4">
-                Didn’t receive the OTP?{" "}
-                <span className="text-green-600 font-medium cursor-pointer hover:underline">
-                  Resend OTP
-                </span>
-              </p>
-            </div>
+        <p className="text-[14px] md:text-[18px] text-black mt-4">
+          Didn’t receive the OTP?{" "}
+          <span className="text-green-600 font-medium cursor-pointer hover:underline">
+            Resend OTP
+          </span>
+        </p>
+      </div>
 
-            <div className="flex justify-center md:justify-end w-full md:w-auto">
-              <img
-                src="isometric-data-protection-concept-with-parent-child-login-window-lock-3d 1.png"
-                alt="OTP illustration"
-                className="w-[142px] h-[198px] object-contain"
-              />
-            </div>
-          </div>
-        )}
+      {/* Right Section (Image) */}
+      <div className="flex justify-center items-center w-full md:w-[250px]">
+        <img
+          src="isometric-data-protection-concept-with-parent-child-login-window-lock-3d 1.png"
+          alt="OTP illustration"
+          className="w-full max-w-[220px] md:max-w-[250px] h-auto object-contain"
+        />
+      </div>
+    </div>
+  </>
+)}
+
+
       </div>
     </div>
   );

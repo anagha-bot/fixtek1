@@ -1,7 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({ scrollToServiceRef }) {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleServicesClick = () => {
+    if (location.pathname === "/") {
+      scrollToServiceRef?.current?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/services");
+    }
+  };
+
   return (
     <div className="flex justify-center">
       <nav className="w-[814px] bg-white shadow-xl rounded-2xl justify-center">
@@ -9,14 +20,12 @@ export default function Navbar() {
           
           {/* Left Links */}
           <div className="flex space-x-20">
-            <NavLink
-              to="/services"
-              className={({ isActive }) =>
-                isActive ? "font-bold text-black" : "hover:text-black"
-              }
+            <button
+              onClick={handleServicesClick}
+              className="hover:text-black font-manrope"
             >
               Services
-            </NavLink>
+            </button>
             <NavLink
               to="/who-we-are"
               className={({ isActive }) =>
@@ -59,4 +68,8 @@ export default function Navbar() {
     </div>
   );
 }
+
+
+
+
 
