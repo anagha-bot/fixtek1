@@ -112,15 +112,15 @@ export default function Homepage({ serviceRef }) {
         </div>
       </div>
     {/* 🛠️ Find Your Home Service Section */}
-<div ref={serviceRef} id="find-service" className="bg-[#0c3b38] h-[500px] py-14 text-center text-white">
+<div ref={serviceRef} id="find-service" className="bg-[#0c3b38] h-[500px] w-full py-14 text-center text-white">
   <h2 className="text-[28px] md:text-[45px] font-bold mb-10 text-manrope">
     Find Your Home Service
   </h2>
   <div className="flex flex-col items-center justify-center">
     {/* Cards Row */}
-    <div className="flex items-center justify-center gap-8 px-4 no-scrollbar mt-4">
+    <div className="flex items-center justify-center gap-6 px-4 no-scrollbar mt-4">
       {/* Card 1 */}
-      <div className="bg-white rounded-xl p-2 text-center shadow w-[140px] h-[120px] opacity-70">
+      <div className="bg-white rounded-xl p-2 text-center shadow w-[140px] h-[120px] opacity-70 ">
         <p className="text-black text-[11px] font-semibold text-manrope">
           Microwave Oven
         </p>
@@ -297,15 +297,34 @@ export default function Homepage({ serviceRef }) {
           </div>
         </div>
         
+{/* Banner Section */}
+<div className="relative w-full max-w-[1232px] h-auto h-[410px] mx-auto mt-20 rounded-lg shadow overflow-hidden">
+  {/* Image */}
+  <img
+    src="/Frame 1171276389.png"
+    alt="Smart Door Banner"
+    className="w-full h-auto object-cover"
+  />
 
-        {/* Banner Section */}
-        <div className="container mx-auto mt-20 px-6 w-[1232px h-[410px]">
-          <img
-            src="Native Smart Locks (2).png"
-            alt="Smart Door Banner"
-            className="w-full rounded-lg shadow"
-          />
-        </div>
+  {/* Text content positioned over the image on the left side */}
+  <div className="absolute inset-0 flex items-center pl-6 sm:pl-10">
+    <div className="max-w-[550px] text-black">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug md:leading-tight">
+        Turn Your <br />
+        <span className=" text-[60px] text-black text-manrope  font-extrabold">Door Into A </span>
+        <span className="text-[70px] text-orange-400 text-manrope font-extrabold">SMART ONE!</span>
+      </h2>
+      <p className="mt-3 text-sm sm:text-base text-manrope text-black">
+        We offer reliable door lock installation services <br/> that will increase the
+        security of your house or <br/>office.
+      </p>
+      <button className="mt-5 bg-orange-500 text-white font-bold text-manrope px-5 py-2 rounded-full shadow hover:bg-orange-600 transition">
+        Request a Quote
+      </button>
+    </div>
+  </div>
+</div>
+
 
         {/* Testimonials */}
         <h2 className="text-center text-[43px] font-bold mt-20 text-manrope">
@@ -327,10 +346,12 @@ export default function Homepage({ serviceRef }) {
                 standard dummy text ever since the 1500s, when an unknown
                 printer took a galley of type and scrambled it to make."
               </p>
-              <p className="mt-2 text-[11px] font-semibold text-manrope">
+              <p className="mt-4 text-[11px] font-semibold text-manrope">
                 Shraddha Musale
               </p>
-              <p className="text-[11px] text-gray-500 text-manrope">Powai</p>
+               <button className="absolute bottom-4 right-2 text-[11px] text-manrope text-black font-semibold bg-[#F0EDE4] px-3 py-1 rounded-full">
+      Powai
+    </button>
             </div>
           </div>
 
@@ -348,10 +369,12 @@ export default function Homepage({ serviceRef }) {
                 standard dummy text ever since the 1500s, when an unknown
                 printer took a galley of type and scrambled it to make."
               </p>
-              <p className="mt-2 text-[11px] font-semibold text-manrope">
+              <p className="mt-4 text-[11px] font-semibold text-manrope">
                 Sapana Jain
               </p>
-              <p className="text-[11px] text-gray-500 text-manrope">Powai</p>
+             <button className="absolute bottom-5 right-2 text-[11px] text-manrope text-black font-semibold bg-[#F0EDE4] px-3 py-1 rounded-full">
+      Powai
+    </button>
             </div>
           </div>
 
@@ -369,10 +392,12 @@ export default function Homepage({ serviceRef }) {
                 standard dummy text ever since the 1500s, when an unknown
                 printer took a galley of type and scrambled it to make."
               </p>
-              <p className="mt-2 text-[11px] font-semibold text-manrope">
+              <p className="mt-4 text-[11px] font-semibold text-manrope">
                 Shraddha Musale
               </p>
-              <p className="text-[11px] text-gray-500 text-manrope">Powai</p>
+               <button className="absolute bottom-5 right-2 text-[11px] text-manrope text-black font-semibold bg-[#F0EDE4] px-3 py-1 rounded-full">
+      Powai
+    </button>
             </div>
           </div>
 
@@ -390,16 +415,18 @@ export default function Homepage({ serviceRef }) {
                 standard dummy text ever since the 1500s, when an unknown
                 printer took a galley of type and scrambled it to make."
               </p>
-              <p className="mt-2 text-[11px] font-semibold text-manrope">
+              <p className="mt-5 text-[11px] font-semibold text-manrope">
                 Sunny Gala
               </p>
-              <p className="text-[11px] text-gray-500 text-manrope">Powai</p>
+        <button className="absolute bottom-4 right-2 text-[11px] text-manrope text-black font-semibold bg-[#F0EDE4] px-3 py-1 rounded-full">
+      Powai
+    </button>
             </div>
           </div>
         </div>
       </div>
 
-    <div className="bg-[#F6F6F6] w-full py-16  px-6 mt-16 flex flex-col items-center justify-center">
+    <div className="bg-[white] w-full py-16  px-6 mt-16 flex flex-col items-center justify-center">
   {/* Top Row */}
   <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center mb-12">
     {/* Card 1 */}
@@ -419,7 +446,7 @@ export default function Homepage({ serviceRef }) {
       <img
         src="Figure (1).png"
         alt="Home Cleaning"
-        className="w-[360px] h-[176px] rounded-t-2xl object-cover"
+        className="w-[360px] h-[176px] bg-[#F6F6F6] rounded-t-2xl object-cover"
       />
       <p className="text-[15px] font-semibold text-gray-800 mt-2 px-3">
         Professionally Trained For Home Cleaning
@@ -431,7 +458,7 @@ export default function Homepage({ serviceRef }) {
       <img
         src="Figure (2).png"
         alt="Freedom"
-        className="w-[360px] h-[176px] rounded-t-2xl object-cover"
+        className="w-[360px] h-[176px] bg-[#F6F6F6]  rounded-t-2xl object-cover"
       />
       <p className="text-[15px] font-semibold text-gray-800 mt-2 px-3">
         Freedom to Cancel or Reschedule
@@ -460,11 +487,11 @@ export default function Homepage({ serviceRef }) {
     </div>
 
     {/* Card 5 */}
-    <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all p-0 flex flex-col items-center text-center w-[362px] h-[226px]">
+    <div className="bg-white  rounded-2xl shadow-sm hover:shadow-md transition-all p-0 flex flex-col items-center text-center w-[362px] h-[226px]">
       <img
         src="Figure (4).png"
         alt="Quality"
-        className="w-[360px] h-[176px] rounded-t-2xl object-cover"
+        className="w-[360px] h-[176px] rounded-t-2xl bg-[#F6F6F6] object-cover"
       />
       <p className="text-[15px] font-semibold text-gray-900 mt-2 font-bold px-3">
         Quality You Can Trust
@@ -476,7 +503,7 @@ export default function Homepage({ serviceRef }) {
       <img
         src="Figure (5).png"
         alt="Families"
-        className="w-[360px] h-[176px] rounded-t-2xl object-cover"
+        className="w-[360px] h-[176px] bg-[#F6F6F6] rounded-t-2xl object-cover"
       />
       <p className="text-[15px] font-semibold text-gray-900 mt-3 font-bold px-3">
         Trusted by 6000+ Families

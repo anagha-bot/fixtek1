@@ -23,7 +23,8 @@ function Services() {
   return (
     <div className="bg-white min-h-screen font-sans">
       {/* Hero Section */}
-      <div className="bg-[#00343D] text-white p-6 rounded-lg flex flex-col md:flex-row items-center md:items-start justify-between max-w-full  md:w-[1300px]  h-auto md:h-[543px] mx-4 md:mx-9 mt-6 md:mt-9">
+      <div className="bg-[#00343D] text-white p-6 rounded-lg flex flex-col md:flex-row items-center md:items-start justify-between max-w-full md:w-[1300px] h-auto md:h-[543px] mx-auto mt-6 md:mt-9">
+
         
         {/* Left: Image Carousel */}
         <div className="flex-shrink-0 w-full md:w-[402px]">
@@ -95,18 +96,18 @@ function Services() {
       </div>
 
       {/* Services Section */}
-      <div className="mx-4 md:mx-9 mt-6 md:mt-9">
-        <h2 className="text-[20px] sm:text-[22px] mb-4 font-manrope text-center md:text-left">
-          Plumbing Services
-        </h2>
+<div className="mx-4 md:mx-9 mt-6 md:mt-9">
+  <h2 className="text-[20px] sm:text-[22px] mb-4 font-manrope text-center md:text-left">
+    Plumbing Services
+  </h2>
 
-        <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-          
-          {/* Service Card 1 */}
-          <div
-            onClick={() => navigate("/booking")}
-            className="bg-white rounded-lg shadow-md flex p-0 gap-4 w-full sm:w-[320px] md:w-[393px] h-[172px] cursor-pointer hover:shadow-lg transition"
-          >
+  {/* Card Container */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center mb-4">
+    {/* Card 1 */}
+    <div
+      onClick={() => navigate("/booking")}
+      className="bg-white rounded-lg shadow-md flex p-0 gap-4 w-full sm:w-[320px] md:w-[393px] h-[172px] cursor-pointer hover:shadow-lg transition"
+    >
             <img
               src="Plumbing Repair.png"
               alt="Leak Repair"
@@ -171,11 +172,12 @@ function Services() {
               </div>
             </div>
           </div>
-
+        
           {/* Service Card 4 */}
+          <div className="flex justify-center">
           <div
             onClick={() => navigate("/Booking/major-plumbing")}
-            className="bg-white rounded-lg shadow-md flex p-0 gap-4 w-full sm:w-[320px] md:w-[393px] h-[172px] cursor-pointer hover:shadow-lg transition"
+            className="bg-white rounded-lg shadow-md flex p-1  gap-4  w-full sm:w-[320px] md:w-[393px] h-[172px] cursor-pointer hover:shadow-lg transition"
           >
             <img
               src="Major Plumbing Work.png"
@@ -191,6 +193,7 @@ function Services() {
                 <p className="text-sm text-gray-500 font-manrope">
                   The plumbing services include major plumbin...
                 </p>
+              </div>
               </div>
             </div>
           </div>

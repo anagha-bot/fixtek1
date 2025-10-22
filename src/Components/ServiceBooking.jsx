@@ -28,10 +28,10 @@ function ServiceBooking() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-manrope mt-9">
+    <div className="flex flex-col min-h-screen bg-white font-manrope">
       {/* Banner Image */}
       <div className="flex justify-center ">
-        <div className="relative w-[1241px] h-[431px]">
+        <div className="w-full h-[431px] relative">
           <img
             src="/Rectangle 22714 (1).png"
             alt="Worker"
@@ -54,7 +54,7 @@ function ServiceBooking() {
       {/* STEP 1: Booking Form */}
       {step === 1 && (
         <div className="flex justify-center -mt-10 ">
-          <div className="w-[1000px] bg-[#F9FBFC] shadow-2xl rounded-xl p-10 border border-gray-200 z-10 relative ">
+          <div className="w-[1000px] bg-[#F5F5FF] shadow-2xl rounded-xl p-10 border border-gray-200 z-10 relative ">
             <h2 className="text-[44px] font-bold text-center text-[#00343D] mb-2">
               Book Service
             </h2>
@@ -139,12 +139,14 @@ function ServiceBooking() {
 
             {/* Buttons */}
             <div className="flex justify-between">
-              <button
-                onClick={() => setStep(0)}
-                className="px-5 py-4 w-[171px] h-[60px] border border-gray-400 rounded-lg bg-[#656565] text-white"
-              >
-                Cancel
-              </button>
+       <button
+       onClick={() => navigate("/booking")}
+       className="px-5 py-4 w-[171px] h-[60px] border border-gray-400 rounded-lg bg-[#656565] text-white hover:bg-[#4b4b4b] transition"
+      >
+  Cancel
+    </button>
+
+
               <button
                 onClick={() => setStep(2)}
                 className="px-8 py-3 w-[171px] h-[60px] bg-[#00343D] text-[22px] text-white rounded-lg hover:bg-[#024650] transition"
@@ -251,12 +253,13 @@ function ServiceBooking() {
 
             {/* Buttons */}
             <div className="flex justify-between">
-              <button
-                onClick={() => setStep(1)}
-                className="px-5 py-3 w-[171px] border rounded-lg bg-gray-500 text-white"
-              >
-                Cancel
-              </button>
+             <button
+  onClick={() => navigate("/booking")}
+  className="px-5 py-3 w-[171px] border rounded-lg bg-gray-500 text-white hover:bg-gray-600 transition"
+>
+  Cancel
+</button>
+
               <button
                 onClick={() => setStep(3)}
                 className="px-5 py-3 w-[171px] rounded-lg bg-[#00343D] text-white"

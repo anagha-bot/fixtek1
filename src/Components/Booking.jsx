@@ -45,7 +45,7 @@ function Booking() {
 
       {/* ---------- Service Info ---------- */}
       <div className="mt-5 px-4 md:px-20">
-        <h3 className="text-xl md:text-2xl font-manrope  font-bold text-[#212529]">
+        <h3 className="text-xl md:text-2xl font-manrope font-bold text-[#212529]">
           Plumbing Repair
         </h3>
         <div className="flex items-center text-gray-600 mt-1">
@@ -92,14 +92,14 @@ function Booking() {
         <div className="space-y-10 py-6 md:py-10">
           {/* Pricing Card */}
           <div className="border rounded-lg p-5 shadow-sm">
-            <div className="bg-blue-100 rounded-lg p-4 flex flex-col sm:flex-row justify-between items-center mb-5">
+            <div className="bg-blue-100 rounded-lg p-4 flex flex-col sm:flex-row justify-between items-center mb-5 space-y-4 sm:space-y-0">
               <div className="flex flex-col items-center flex-1">
                 <p className="text-xs md:text-sm text-gray-700">
                   First hour charge
                 </p>
                 <p className="text-sm md:text-lg text-[#003580]">AED 90.00</p>
               </div>
-              <div className="flex flex-col items-center flex-1 sm:border-l border-blue-300 sm:pl-6 mt-4 sm:mt-0">
+              <div className="flex flex-col items-center flex-1 sm:border-l border-blue-300 sm:pl-6">
                 <p className="text-xs md:text-sm text-gray-700">
                   Later hour charge
                 </p>

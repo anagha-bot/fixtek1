@@ -15,7 +15,8 @@ export default function Navbar({ scrollToServiceRef }) {
 
   return (
     <div className="flex justify-center">
-      <nav className="w-[814px] bg-white shadow-xl rounded-2xl justify-center">
+      {/* Removed shadow-xl */}
+      <nav className="w-[814px] bg-white rounded-2xl justify-center">
         <div className="w-[814px] h-[43px] flex justify-between items-center space-x-10 py-3 px-10 font-manrope text-[17px] text-gray-800">
           
           {/* Left Links */}
@@ -68,8 +69,3 @@ export default function Navbar({ scrollToServiceRef }) {
     </div>
   );
 }
-
-
-
-
-
